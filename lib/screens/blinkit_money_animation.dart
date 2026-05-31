@@ -281,7 +281,7 @@ class _BlinkitMoneyAnimationState extends State<BlinkitMoneyAnimation>
                       ),
                     ),
 
-                    const SizedBox(height: 16),
+                    const SizedBox(height: 4),
 
                     // ── ADD MONEY BUTTON ──
                     FadeTransition(
@@ -289,7 +289,6 @@ class _BlinkitMoneyAnimationState extends State<BlinkitMoneyAnimation>
                       child: ScaleTransition(
                         scale: buttonScale,
                         child: Container(
-                          margin: const EdgeInsets.symmetric(horizontal: 16),
                           height: 54,
                           decoration: BoxDecoration(
                               color: const Color(0xff1ED760),
@@ -310,7 +309,6 @@ class _BlinkitMoneyAnimationState extends State<BlinkitMoneyAnimation>
                     FadeTransition(
                       opacity: extraContentOpacity,
                       child: Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 16),
                         padding: const EdgeInsets.symmetric(
                             horizontal: 14, vertical: 12),
                         decoration: BoxDecoration(
@@ -363,15 +361,12 @@ class _BlinkitMoneyAnimationState extends State<BlinkitMoneyAnimation>
                     // ── FOOTER MESSAGE ──
                     FadeTransition(
                       opacity: extraContentOpacity,
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Text(StringConstants.footerMessage,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.white.withOpacity(0.30),
-                                fontSize: 30,
-                                fontWeight: FontWeight.w500)),
-                      ),
+                      child: Text(StringConstants.footerMessage,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white.withOpacity(0.30),
+                              fontSize: 30,
+                              fontWeight: FontWeight.w500)),
                     ),
 
                     const SizedBox(height: 24),
